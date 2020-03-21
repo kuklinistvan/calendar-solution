@@ -1,3 +1,7 @@
+# WARNING
+
+Alpha state, bugs are likely
+
 ![screenshot](screenshot.png)
 
 
