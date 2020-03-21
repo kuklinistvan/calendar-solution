@@ -6,4 +6,4 @@ cd "$DIR"
 cp -r ../resources/davical/dba dba
 cp -r ../resources/awl awl
 
-docker build -t kuklinistvan/container_solution-postgres .
+docker build -t kuklinistvan/calendar_solution-postgres .
