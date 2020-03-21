@@ -34,7 +34,7 @@ The first time you run this image, the databases must be initialized.
 
 3. Change PostgreSQL password here:
 
-   * cs-web-config/agendav/settings.php
+   * cs-web-config/davical/config.php
 
 Fire up the containers with
 
