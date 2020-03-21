@@ -9,6 +9,8 @@ services:
       - ./cs-web-config/agendav:/usr/share/agendav/web/config
       - ./cs-web-config/infcloud:/usr/share/infcloud/external-config
       - ./bootstrap/web.sh:/bootstrap.sh
+    ports:
+      - 127.0.0.1:5020:80
 
   postgres:
     image: cs-postgres:latest
