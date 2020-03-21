@@ -20,13 +20,29 @@ I'm not blaming neither PHP, DAViCal, AgenDAV or InfCloud - I'm happy to have th
 
 ## Installation
 
-The first time you run this image, the databases must be initialized. Fire up them with.
+The first time you run this image, the databases must be initialized.
+
+## Changing the database passwords:
+
+1. Override `POSTGRES_PASSWORD` and `MYSQL_ROOT_PASSWORD` in the `Dockerfile`. 
+
+2. Change MariaDB password here:
+
+   * bootstrap/mariadb.sh
+
+   * cs-web-config/agendav/settings.php
+
+3. Change PostgreSQL password here:
+
+   * cs-web-config/agendav/settings.php
+
+Fire up the containers with
 
 ```
 docker-compose up
 ```
 
-Wait a minute or two on the first run. Then, bootstrap the databases:
+Wait a minute or two on the first run. Then, bootstrap the databases (why are there two? because they worked...):
 
 ```
 # The order is important!
