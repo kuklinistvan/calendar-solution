@@ -1,7 +1,7 @@
 version: '2'
 services:
   web:
-    image: cs-web:latest
+    image: kuklinistvan/calendar_solution-web:latest
     environment:
       - AGENDAV_ENVIRONMENT=dev
     volumes:
@@ -13,7 +13,7 @@ services:
       - 127.0.0.1:5020:80
 
   postgres:
-    image: cs-postgres:latest
+    image: kuklinistvan/calendar_solution-postgres:latest
     volumes:
       - /var/lib/postgresql/data/pgdata
       - ./bootstrap/postgres.sh:/bootstrap.sh
