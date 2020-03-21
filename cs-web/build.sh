@@ -5,5 +5,6 @@ cd "$DIR"
 cp -r ../resources/awl awl
 cp -r ../resources/davical davical
 cp -r ../resources/agendav agendav
+cp -r ../resources/infcloud infcloud
 
 docker build -t cs-web .

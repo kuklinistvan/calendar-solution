@@ -6,6 +6,7 @@ cd "$DIR"
 
 DAVICAL_TXZ="davical_1.1.9.2.orig.tar.xz"
 AWL_TXZ="awl_0.60.orig.tar.xz"
+INFCLOUD_ZIP="InfCloud_0.13.1.zip"
 
 AGENDAV_VER="2.2.0"
 AGENDAV_TGZ="agendav-$AGENDAV_VER.tar.gz"
@@ -21,6 +22,10 @@ fi
 
 if [ ! -f $AGENDAV_TGZ ]; then
     wget https://github.com/agendav/agendav/releases/download/$AGENDAV_VER/$AGENDAV_TGZ
+fi
+
+if [ ! -f $INFCLOUD_ZIP ]; then
+    wget https://www.inf-it.com/$INFCLOUD_ZIP
 fi
 
 if [ ! -d davical ]; then
@@ -40,4 +45,8 @@ fi
 if [ ! -d agendav ]; then
     tar xf $AGENDAV_TGZ
     mv agendav-$AGENDAV_VER agendav
+fi
+
+if [ ! -d infcloud ]; then
+    unzip $INFCLOUD_ZIP
 fi
