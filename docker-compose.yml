@@ -7,11 +7,13 @@ services:
     volumes:
       - ./cs-web-config/davical:/usr/share/davical/config
       - ./cs-web-config/agendav:/usr/share/agendav/web/config
+      - ./bootstrap/web.sh:/bootstrap.sh
 
   postgres:
     image: cs-postgres:latest
     volumes:
       - /var/lib/postgresql/data/pgdata
+      - ./bootstrap/postgres.sh:/bootstrap.sh
     environment:
       - POSTGRES_PASSWORD=mysecretpassword
       - PGDATA=/var/lib/postgresql/data/pgdata
@@ -19,5 +21,6 @@ services:
     image: mariadb:latest
     volumes:
       - /var/lib/mysql
+      - ./bootstrap/mariadb.sh:/bootstrap.sh
     environment:
       - MYSQL_ROOT_PASSWORD=mysecretpassword
