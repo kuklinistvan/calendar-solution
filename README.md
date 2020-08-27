@@ -1,10 +1,4 @@
-# WARNING
-
-Alpha state, bugs are likely
-
 ![screenshot](screenshot.png)
-
-
 
 # Calendar Solution
 
@@ -16,7 +10,11 @@ You can choose either the Debian package or the official released version. Then 
 
 Also, these software were written at the time of PHP 5, whereas the newer versions aren't backward-compatible.
 
-Stop the suffering. Use the image. *And open an issue if something does not work! I'm happy to help :)* 
+Stop the suffering. Use the image. *And open an issue if something does not work! I'm happy to help :)*
+
+### Feedback wanted
+
+Bugs may occur here and there, please let me know if it did not work for you.
 
 ### Disclaimer
 
